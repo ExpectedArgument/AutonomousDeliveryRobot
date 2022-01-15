@@ -1,0 +1,9 @@
+<launch>
+    <arg name="cmd_vel" default="/cmd_vel"/>
+    <arg name="name" default="adr"/>
+  
+    <param name="cmd_vel_topic_name" value="$(arg cmd_vel)"/>
+  
+    <node name="$(arg name)_drive" pkg="adr_gazebo" type="adr_drive" required="true" output="screen"/>
+  </launch>
+  

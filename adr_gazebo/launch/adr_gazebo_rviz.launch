@@ -1,0 +1,20 @@
+<launch>
+    <arg name="model" default="adr"/>
+  
+    <include file="$(find adr_bringup)/launch/adr_remote.launch">
+      <arg name="model" value="$(arg model)"/>
+    </include>
+  
+    <node name="vehicle_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher">
+    </node>
+
+    <node name="joint_state_publisher" pkg="joint_state_publisher_gui" type="joint_state_publisher_gui">
+      <param name="rate" value="30" />
+      <param name="use_gui" value="true" />
+    </node>
+
+
+
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find adr_gazebo)/rviz/adr_gazebo_model.rviz"/>
+  </launch>
+  

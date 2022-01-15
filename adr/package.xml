@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>adr</name>
+  <version>1.0.0</version>
+  <description>
+    ROS packages for the adr -Autonomous Delivery Robot- (meta package)
+  </description>
+  <license>Apache 2.0</license>
+  <author email="muvahhidkilic@hotmail.com">Muvahhid Kılıç</author>
+  <maintainer email="muvahhidkilic@hotmail.com">Muvahhid Kılıç</maintainer>
+  <!-- <url type="website">http://wiki.ros.org/turtlebot3</url> -->
+  <!-- <url type="emanual">http://turtlebot3.robotis.com</url> -->
+  <url type="repository">https://github.com/ExpectedArgument/AutonomousDeliveryRobot</url>
+  <url type="bugtracker">https://github.com/ExpectedArgument/AutonomousDeliveryRobot/issues</url>
+  <buildtool_depend>catkin</buildtool_depend>
+  <exec_depend>adr_bringup</exec_depend>
+  <exec_depend>adr_description</exec_depend>
+  <exec_depend>adr_example</exec_depend>
+  <exec_depend>adr_navigation</exec_depend>
+  <exec_depend>adr_slam</exec_depend>
+  <exec_depend>adr_teleop</exec_depend>
+  <export><metapackage/></export>
+</package>
